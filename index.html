@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>贊助廣告 - 棒球紀錄軟體</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; max-width: 500px; }
+        h1 { color: #007bff; font-size: 24px; }
+        .ad-box { width: 300px; height: 250px; background: #fafafa; border: 1px solid #eee; margin: 20px auto; display: flex; align-items: center; justify-content: center; }
+        .footer { margin-top: 20px; display: flex; justify-content: space-between; align-items: center; }
+        #closeBtn { padding: 10px 25px; border-radius: 8px; border: 1px solid #ddd; background: white; cursor: not-allowed; color: #ccc; }
+        #closeBtn.active { cursor: pointer; color: #333; border-color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>感謝您使用棒球紀錄軟體！</h1>
+        <p>這是一個由業餘開發者維護的軟體。如果您喜歡這個工具，歡迎考慮分享給更多喜愛棒球的朋友！</p>
+        
+        <div class="ad-box">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5958690019836359" crossorigin="anonymous"></script>
+            <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5958690019836359" data-ad-slot="5975345707"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <div class="footer">
+            <span id="timer">廣告將在 5 秒後可關閉</span>
+            <button id="closeBtn" onclick="sendSignal()" disabled>關閉</button>
+        </div>
+    </div>
+
+    <script>
+        let timeLeft = 5;
+        const timerElem = document.getElementById('timer');
+        const btn = document.getElementById('closeBtn');
+
+        const countdown = setInterval(() => {
+            timeLeft--;
+            timerElem.innerText = `廣告將在 ${timeLeft} 秒後可關閉`;
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                timerElem.style.display = 'none';
+                btn.disabled = false;
+                btn.classList.add('active');
+            }
+        }, 1000);
+
+        function sendSignal() {
+            if (window.chrome && window.chrome.webview) {
+                window.chrome.webview.postMessage("done");
+            }
+        }
+    </script>
+</body>
+</html>
