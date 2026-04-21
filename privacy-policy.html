@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Simulator - 隱私權政策 / Privacy Policy</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "Microsoft JhengHei", "Segoe UI", sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.8;
+        }
+        header {
+            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 { font-size: 2em; margin-bottom: 8px; }
+        header p { opacity: 0.85; font-size: 0.95em; }
+        .lang-nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 24px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        .lang-btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: 2px solid #1a73e8;
+            background: white;
+            color: #1a73e8;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+        .lang-btn:hover, .lang-btn.active {
+            background: #1a73e8;
+            color: white;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 28px 32px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .section h2 {
+            color: #1a73e8;
+            font-size: 1.2em;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8f0fe;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section h3 {
+            color: #444;
+            font-size: 1em;
+            margin: 16px 0 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 0.92em;
+        }
+        th {
+            background: #e8f0fe;
+            color: #1a73e8;
+            padding: 10px 14px;
+            text-align: left;
+            font-weight: bold;
+        }
+        td {
+            padding: 9px 14px;
+            border-bottom: 1px solid #f0f0f0;
+            vertical-align: top;
+        }
+        tr:last-child td { border-bottom: none; }
+        tr:hover td { background: #fafbff; }
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .badge-green { background: #e6f4ea; color: #137333; }
+        .badge-red { background: #fce8e6; color: #c5221f; }
+        .highlight-box {
+            background: #e8f0fe;
+            border-left: 4px solid #1a73e8;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 14px 0;
+            font-size: 0.95em;
+        }
+        ul { padding-left: 20px; }
+        ul li { margin: 6px 0; }
+        .icon { font-size: 1.1em; }
+        footer {
+            text-align: center;
+            color: #888;
+            font-size: 0.85em;
+            padding: 30px 20px;
+            border-top: 1px solid #eee;
+        }
+        a { color: #1a73e8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Language sections */
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🛰️ GPS Simulator</h1>
+    <p>隱私權政策 / Privacy Policy / プライバシーポリシー</p>
+    <p style="margin-top:8px; font-size:0.85em; opacity:0.75;">
+        生效日期 / Effective Date / 発効日：2026-04-21 ｜ 版本 v1.2.0
+    </p>
+</header>
+
+<!-- Language Switcher -->
+<div class="lang-nav">
+    <button class="lang-btn active" onclick="switchLang('zh')">繁體中文</button>
+    <button class="lang-btn" onclick="switchLang('en')">English</button>
+    <button class="lang-btn" onclick="switchLang('ja')">日本語</button>
+</div>
+
+<div class="content">
+
+    <!-- ══════════════ 繁體中文 ══════════════ -->
+    <div id="lang-zh" class="lang-section active">
+
+        <div class="section">
+            <h2><span class="icon">📋</span> 1. 概述</h2>
+            <p>
+                GPS Simulator（以下簡稱「本應用程式」）是一款 GPS 位置模擬工具，允許使用者透過 Android 開發人員選項功能，在裝置上模擬虛擬 GPS 位置。本隱私權政策說明本應用程式如何收集、使用及保護與您相關的資料。
+            </p>
+            <div class="highlight-box">
+                ✅ <strong>核心承諾：</strong>本應用程式所有資料均儲存於裝置本地，不會上傳至任何外部伺服器，不收集個人身份資訊，不進行任何使用行為追蹤。
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">💾</span> 2. 儲存於裝置的資料</h2>
+            <p>以下資料僅儲存於您的裝置本地（Android SharedPreferences），<strong>永遠不會傳送至任何伺服器或第三方</strong>：</p>
+            <table>
+                <tr><th>資料類型</th><th>儲存用途</th></tr>
+                <tr><td>最後一次模擬的 GPS 座標（緯度、經度）</td><td>下次開啟 APP 時自動還原上次位置</td></tr>
+                <tr><td>我的最愛地點清單（名稱、緯度、經度）</td><td>快速選取常用位置</td></tr>
+                <tr><td>搖桿速度等級（慢／中／快）</td><td>記住使用者偏好設定</td></tr>
+                <tr><td>GPS 注入間隔設定（毫秒）</td><td>記住使用者偏好設定</td></tr>
+                <tr><td>搖桿最高速度（km/h）</td><td>記住使用者偏好設定</td></tr>
+                <tr><td>介面語言設定（繁中／英文／日文）</td><td>記住使用者語言偏好</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🚫</span> 3. 我們不收集的資料</h2>
+            <ul>
+                <li>❌ 真實 GPS 位置（僅供畫面顯示，不儲存、不上傳）</li>
+                <li>❌ 個人識別資訊（姓名、電子郵件、電話號碼等）</li>
+                <li>❌ 裝置識別碼（IMEI、Android ID、廣告 ID 等）</li>
+                <li>❌ 使用行為追蹤或應用程式分析資料</li>
+                <li>❌ 崩潰報告或錯誤日誌（不收集、不上傳）</li>
+                <li>❌ 第三方廣告或分析 SDK 資料</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🌐</span> 4. 網路使用</h2>
+            <p>本應用程式使用網際網路連線的唯一目的是<strong>下載 OpenStreetMap 地圖圖磚</strong>。</p>
+            <ul style="margin-top:12px;">
+                <li>地圖資料由 OpenStreetMap 社群提供（<a href="https://www.openstreetmap.org" target="_blank">openstreetmap.org</a>）</li>
+                <li>下載請求僅包含地圖座標（zoom/x/y 圖磚編號），不包含任何個人識別資訊</li>
+                <li>地圖圖磚會快取於裝置本地以減少重複下載</li>
+                <li>本應用程式不與任何自建後端伺服器通訊</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🔐</span> 5. 所需權限說明</h2>
+            <table>
+                <tr><th>權限</th><th>用途說明</th></tr>
+                <tr><td><code>ACCESS_FINE_LOCATION</code><br><code>ACCESS_COARSE_LOCATION</code></td><td>讀取裝置真實 GPS 位置，在地圖上顯示綠色定位點（使用者可選擇拒絕）</td></tr>
+                <tr><td><code>ACCESS_MOCK_LOCATION</code></td><td>核心功能：向 Android 系統注入模擬 GPS 位置，使本應用程式出現在「開發人員選項→選擇模擬位置應用程式」清單中</td></tr>
+                <tr><td><code>INTERNET</code></td><td>下載 OpenStreetMap 地圖圖磚</td></tr>
+                <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>判斷網路狀態以決定是否嘗試下載圖磚</td></tr>
+                <tr><td><code>SYSTEM_ALERT_WINDOW</code></td><td>顯示搖桿浮動視窗（懸浮在其他 APP 上方）</td></tr>
+                <tr><td><code>POST_NOTIFICATIONS</code></td><td>Android 13 以上顯示前景服務通知（搖桿服務運行中提示）</td></tr>
+                <tr><td><code>FOREGROUND_SERVICE</code><br><code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td>讓搖桿浮動視窗服務在背景持續運行</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">📦</span> 6. 第三方服務</h2>
+            <table>
+                <tr><th>服務</th><th>用途</th><th>隱私政策</th></tr>
+                <tr>
+                    <td><strong>osmdroid</strong>（Apache 2.0）</td>
+                    <td>地圖顯示引擎，從 OpenStreetMap 下載圖磚</td>
+                    <td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">OSM Privacy Policy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google Play Services Location</strong></td>
+                    <td>Fused Location Provider，用於讀取裝置真實位置</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🔒</span> 7. 資料安全</h2>
+            <ul>
+                <li>所有應用程式設定均使用 Android <code>MODE_PRIVATE</code> SharedPreferences 儲存，其他應用程式無法存取</li>
+                <li>本應用程式不建立帳號、不要求登入、不與任何後端伺服器通訊</li>
+                <li>Release 版本啟用 ProGuard/R8 程式碼混淆與資源壓縮，防止逆向工程</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">👶</span> 8. 兒童隱私</h2>
+            <p>本應用程式不針對 13 歲以下兒童設計，且不主動收集任何個人資料，因此不涉及兒童隱私特殊規範問題。</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🔄</span> 9. 政策變更</h2>
+            <p>若本隱私權政策有所更新，將於本頁面公告，並同步更新生效日期。繼續使用本應用程式即視為您接受更新後的政策。</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">📬</span> 10. 聯絡我們</h2>
+            <p>如有任何隱私相關問題，請透過 <a href="https://play.google.com/store/apps/details?id=com.rrgps.fakegps" target="_blank">Google Play 商店頁面</a>的「聯絡開發者」功能與我們聯繫。</p>
+        </div>
+
+    </div><!-- /lang-zh -->
+
+    <!-- ══════════════ English ══════════════ -->
+    <div id="lang-en" class="lang-section">
+
+        <div class="section">
+            <h2><span class="icon">📋</span> 1. Overview</h2>
+            <p>
+                GPS Simulator is a GPS location spoofing tool that allows users to simulate virtual GPS positions on their Android device using the Developer Options. This Privacy Policy explains how the app handles data related to you.
+            </p>
+            <div class="highlight-box">
+                ✅ <strong>Core Commitment:</strong> All data is stored exclusively on your device. We never upload data to external servers, collect personal identifiers, or track usage behavior.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">💾</span> 2. Data Stored on Device</h2>
+            <p>The following data is stored <strong>locally on your device only</strong> (Android SharedPreferences) and is <strong>never transmitted to any server or third party</strong>:</p>
+            <table>
+                <tr><th>Data Type</th><th>Purpose</th></tr>
+                <tr><td>Last simulated GPS coordinates (lat/lng)</td><td>Restore position on next app launch</td></tr>
+                <tr><td>Favorites list (name, latitude, longitude)</td><td>Quick access to saved locations</td></tr>
+                <tr><td>Joystick speed level (slow/medium/fast)</td><td>Remember user preferences</td></tr>
+                <tr><td>GPS injection interval (milliseconds)</td><td>Remember user preferences</td></tr>
+                <tr><td>Joystick max speed (km/h)</td><td>Remember user preferences</td></tr>
+                <tr><td>Interface language (ZH/EN/JA)</td><td>Remember language preference</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🚫</span> 3. Data We Do NOT Collect</h2>
+            <ul>
+                <li>❌ Real GPS location (displayed on screen only, never stored or uploaded)</li>
+                <li>❌ Personal identifiers (name, email, phone number, etc.)</li>
+                <li>❌ Device identifiers (IMEI, Android ID, advertising ID, etc.)</li>
+                <li>❌ Usage analytics or behavioral tracking</li>
+                <li>❌ Crash reports or error logs</li>
+                <li>❌ Third-party advertising or analytics SDK data</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🌐</span> 4. Internet Usage</h2>
+            <p>The app uses the internet <strong>solely to download OpenStreetMap map tiles</strong>.</p>
+            <ul style="margin-top:12px;">
+                <li>Map data is provided by the OpenStreetMap community (<a href="https://www.openstreetmap.org" target="_blank">openstreetmap.org</a>)</li>
+                <li>Requests contain only tile coordinates — no personal information</li>
+                <li>Tiles are cached locally to reduce repeated downloads</li>
+                <li>The app does not communicate with any proprietary backend server</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🔐</span> 5. Permissions Explained</h2>
+            <table>
+                <tr><th>Permission</th><th>Purpose</th></tr>
+                <tr><td><code>ACCESS_FINE/COARSE_LOCATION</code></td><td>Display real GPS position as green marker on map (user may deny)</td></tr>
+                <tr><td><code>ACCESS_MOCK_LOCATION</code></td><td>Core function: inject simulated GPS into Android location system</td></tr>
+                <tr><td><code>INTERNET</code></td><td>Download OpenStreetMap map tiles</td></tr>
+                <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Check network availability before downloading tiles</td></tr>
+                <tr><td><code>SYSTEM_ALERT_WINDOW</code></td><td>Display floating joystick overlay above other apps</td></tr>
+                <tr><td><code>POST_NOTIFICATIONS</code></td><td>Show foreground service notification (Android 13+)</td></tr>
+                <tr><td><code>FOREGROUND_SERVICE</code></td><td>Keep joystick overlay service running in background</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">📦</span> 6. Third-Party Services</h2>
+            <table>
+                <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+                <tr>
+                    <td><strong>osmdroid</strong> (Apache 2.0)</td>
+                    <td>Map rendering engine using OpenStreetMap tiles</td>
+                    <td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">OSM Privacy Policy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google Play Services Location</strong></td>
+                    <td>Fused Location Provider for reading device GPS</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🔒</span> 7. Data Security</h2>
+            <ul>
+                <li>All settings use Android <code>MODE_PRIVATE</code> SharedPreferences — inaccessible to other apps</li>
+                <li>No accounts, no login, no backend server communication</li>
+                <li>Release builds use ProGuard/R8 code obfuscation and resource shrinking</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">👶</span> 8. Children's Privacy</h2>
+            <p>This app is not designed for children under 13 and does not actively collect any personal information.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🔄</span> 9. Policy Changes</h2>
+            <p>If this policy is updated, changes will be posted on this page with an updated effective date. Continued use of the app constitutes acceptance of the updated policy.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">📬</span> 10. Contact Us</h2>
+            <p>For privacy inquiries, please use the "Contact Developer" option on the <a href="https://play.google.com/store/apps/details?id=com.rrgps.fakegps" target="_blank">Google Play Store page</a>.</p>
+        </div>
+
+    </div><!-- /lang-en -->
+
+    <!-- ══════════════ 日本語 ══════════════ -->
+    <div id="lang-ja" class="lang-section">
+
+        <div class="section">
+            <h2><span class="icon">📋</span> 1. 概要</h2>
+            <p>
+                GPS SimulatorはAndroidのDeveloper Optionsを使用して仮想GPS位置をシミュレートするアプリです。本プライバシーポリシーは、アプリがお客様のデータをどのように取り扱うかを説明します。
+            </p>
+            <div class="highlight-box">
+                ✅ <strong>基本方針：</strong>すべてのデータはデバイスのローカルにのみ保存されます。外部サーバーへの送信、個人情報の収集、利用行動の追跡は一切行いません。
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">💾</span> 2. デバイスに保存されるデータ</h2>
+            <p>以下のデータはデバイスのローカルストレージ（SharedPreferences）<strong>のみ</strong>に保存され、外部サーバーや第三者には一切送信されません：</p>
+            <table>
+                <tr><th>データの種類</th><th>保存目的</th></tr>
+                <tr><td>最後にシミュレートしたGPS座標（緯度・経度）</td><td>次回起動時に前回の位置を復元</td></tr>
+                <tr><td>お気に入り地点リスト（名前・座標）</td><td>よく使う場所への素早いアクセス</td></tr>
+                <tr><td>ジョイスティック速度レベル</td><td>ユーザー設定の記憶</td></tr>
+                <tr><td>GPS注入間隔設定（ミリ秒）</td><td>ユーザー設定の記憶</td></tr>
+                <tr><td>ジョイスティック最高速度（km/h）</td><td>ユーザー設定の記憶</td></tr>
+                <tr><td>インターフェース言語設定</td><td>言語設定の記憶</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🚫</span> 3. 収集しないデータ</h2>
+            <ul>
+                <li>❌ 実際のGPS位置情報（画面表示のみ、保存・送信なし）</li>
+                <li>❌ 個人識別情報（氏名、メールアドレス、電話番号など）</li>
+                <li>❌ 端末識別子（IMEI、Android ID、広告IDなど）</li>
+                <li>❌ 利用行動の追跡・分析</li>
+                <li>❌ クラッシュレポートやエラーログ</li>
+                <li>❌ 第三者広告・分析SDKのデータ</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🌐</span> 4. インターネット接続</h2>
+            <p>アプリはインターネットを<strong>OpenStreetMapの地図タイル取得のみ</strong>に使用します。</p>
+            <ul style="margin-top:12px;">
+                <li>地図データはOpenStreetMapコミュニティが提供（<a href="https://www.openstreetmap.org" target="_blank">openstreetmap.org</a>）</li>
+                <li>リクエストにはタイル座標のみが含まれ、個人情報は含まれません</li>
+                <li>タイルはローカルにキャッシュされ、再ダウンロードを最小限に抑えます</li>
+                <li>独自のバックエンドサーバーとは一切通信しません</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🔐</span> 5. 権限の説明</h2>
+            <table>
+                <tr><th>権限</th><th>目的</th></tr>
+                <tr><td><code>ACCESS_FINE/COARSE_LOCATION</code></td><td>地図上に実際のGPS位置を緑色のマーカーで表示（拒否可能）</td></tr>
+                <tr><td><code>ACCESS_MOCK_LOCATION</code></td><td>コア機能：AndroidシステムにGPS位置を注入</td></tr>
+                <tr><td><code>INTERNET</code></td><td>地図タイルのダウンロード</td></tr>
+                <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>ネットワーク状態の確認</td></tr>
+                <tr><td><code>SYSTEM_ALERT_WINDOW</code></td><td>フローティングジョイスティックの表示</td></tr>
+                <tr><td><code>POST_NOTIFICATIONS</code></td><td>フォアグラウンドサービス通知（Android 13以上）</td></tr>
+                <tr><td><code>FOREGROUND_SERVICE</code></td><td>ジョイスティックサービスのバックグラウンド実行</td></tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">📦</span> 6. 第三者サービス</h2>
+            <table>
+                <tr><th>サービス</th><th>目的</th><th>プライバシーポリシー</th></tr>
+                <tr>
+                    <td><strong>osmdroid</strong>（Apache 2.0）</td>
+                    <td>OpenStreetMapタイルを使用する地図表示エンジン</td>
+                    <td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">OSM Privacy Policy</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Google Play Services Location</strong></td>
+                    <td>デバイスの実際のGPS読み取り</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🔒</span> 7. データセキュリティ</h2>
+            <ul>
+                <li>すべての設定はAndroid <code>MODE_PRIVATE</code> SharedPreferencesを使用して保存（他のアプリからアクセス不可）</li>
+                <li>アカウント不要、ログイン不要、バックエンドサーバーとの通信なし</li>
+                <li>リリースビルドはProGuard/R8によるコード難読化とリソース圧縮を使用</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">👶</span> 8. 子供のプライバシー</h2>
+            <p>本アプリは13歳未満の子供を対象としておらず、個人情報を積極的に収集しません。</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🔄</span> 9. ポリシーの変更</h2>
+            <p>本ポリシーが更新される場合は、このページに変更内容と更新日を掲載します。アプリの継続使用は、更新されたポリシーへの同意とみなされます。</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">📬</span> 10. お問い合わせ</h2>
+            <p>プライバシーに関するお問い合わせは、<a href="https://play.google.com/store/apps/details?id=com.rrgps.fakegps" target="_blank">Google Playストアページ</a>の「開発者に連絡」からお願いします。</p>
+        </div>
+
+    </div><!-- /lang-ja -->
+
+</div><!-- /content -->
+
+<footer>
+    <p>GPS Simulator &copy; 2026 | Package ID: com.rrgps.fakegps</p>
+    <p style="margin-top:6px;">
+        <a href="index.html">Home</a>
+    </p>
+</footer>
+
+<script>
+    function switchLang(lang) {
+        // Hide all
+        document.querySelectorAll('.lang-section').forEach(e => e.classList.remove('active'));
+        document.querySelectorAll('.lang-btn').forEach(e => e.classList.remove('active'));
+        // Show selected
+        document.getElementById('lang-' + lang).classList.add('active');
+        event.target.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
+
